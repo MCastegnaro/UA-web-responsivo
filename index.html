@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Projeto responsivo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Web Design Responsivo</h1>
+      <p>
+        Web design responsivo é sobre a criação de páginas da web que ficam bem
+        em todos os dispositivos! Um web design responsivo se ajustará
+        automaticamente a diferentes tamanhos de tela e viewports.
+      </p>
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Serviços</a>
+      <a href="#">Sobre nós</a>
+      <a href="#">Contato</a>
+    </nav>
+    <main>
+      <article>
+        <h1>O que é web responsivo?</h1>
+        <p>
+          Responsive Web Design é usar HTML e CSS para redimensionar, ocultar,
+          reduzir ou ampliar automaticamente um site, para torná-lo bom em todos
+          os dispositivos (computadores, tablets e telefones):
+        </p>
+      </article>
+      <article>
+        <h1 class="text-vw">Tamanho do texto responsivo</h1>
+        <p class="text-vw">
+          O tamanho do texto pode ser definido com uma unidade "vw", que
+          significa a "largura da janela de visualização". Dessa forma, o
+          tamanho do texto seguirá o tamanho da janela do navegador:
+        </p>
+      </article>
+
+      <article>
+        <h1>Mostrar imagens diferentes dependendo da largura do navegador</h1>
+        <p>
+          O elemento HTML picture permite definir imagens diferentes para
+          diferentes tamanhos de janela do navegador. Redimensione a janela do
+          navegador para ver como a imagem abaixo muda dependendo da largura:
+        </p>
+
+        <span
+          >Viewport é o tamanho da janela do navegador. 1vw = 1% da largura da
+          janela de visualização. Se a janela de visualização tiver 50 cm de
+          largura, 1vw é 0,5 cm.</span
+        >
+        <picture>
+          <source srcset="./img/caramelo-xs.jpg" media="(max-width: 600px)" />
+          <source srcset="./img/caramelo-sm.jpg" media="(max-width: 1500px)" />
+          <source srcset="./img/caramelo-md.jpg" />
+          <img src="./img/caramelo-md.jpg" alt="Cachorro caramelo" />
+        </picture>
+      </article>
+      <article>
+        <h1>Consultas de mídia</h1>
+        <p>
+          Além de redimensionar textos e imagens, também é comum utilizar media
+          queries em páginas web responsivas. Com consultas de mídia, você pode
+          definir estilos completamente diferentes para diferentes tamanhos de
+          navegador.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <p>Fale conosco</p>
+    </footer>
+  </body>
+</html>
